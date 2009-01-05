@@ -66,7 +66,8 @@ end
 lti = LatexToImage.new(ARGV[0] ,filebase,"tmpfolder")
 lti.latexpreamble += "\\usepackage{amsmath}"
 lti.process
-puts Dir.pwd
+
+# Cleanup
 File.copy("tmpfolder/" + filebase + ".png", ".")
 File.delete(*Dir["tmpfolder/*"])
 Dir.rmdir("tmpfolder") 
