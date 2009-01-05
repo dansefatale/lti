@@ -1,0 +1,14 @@
+lti is a handy ruby script that let's you convert
+a string of latex code directly to a png image on
+the commandline. It is meant to quickly make images
+of formulas which can then be included in e.g. 
+webpages or textdocuments.
+lti depends on the following programs being present
+on your computer (and in your path):
+	- latex (of course)
+	- ghostscript
+	- dvips
+	- ImageMagick (it uses the convert command)
+
+Currently lti is only tested on OS X Tiger but it
+should run also on linux. Windows will follow.
